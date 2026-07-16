@@ -1,0 +1,33 @@
+body{
+
+    background:#f4f7fa;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.card{
+
+    border:none;
+
+    border-radius:15px;
+
+}
+
+.navbar{
+
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+
+}
+
+label{
+
+    font-weight:bold;
+
+}
+
+.btn{
+
+    border-radius:8px;
+
+}

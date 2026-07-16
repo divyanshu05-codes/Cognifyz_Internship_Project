@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Students</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h2 class="mb-4 text-center">Registered Students</h2>
+
+    <table class="table table-bordered table-striped">
+
+        <thead class="table-dark">
+
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <% students.forEach(student => { %>
+
+            <tr>
+
+                <td><%= student.name %></td>
+                <td><%= student.email %></td>
+                <td><%= student.phone %></td>
+                <td><%= student.age %></td>
+                <td><%= student.course %></td>
+
+            </tr>
+
+            <% }) %>
+
+        </tbody>
+
+    </table>
+
+    <a href="/" class="btn btn-primary">
+        Back to Registration
+    </a>
+
+</div>
+
+</body>
+</html>
